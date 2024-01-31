@@ -43,5 +43,5 @@ be based on the assumptions given below:
     $E_s = $ modulus of elasticity of steel.
 
     
-![svg](BeamStrainStress.svg)
+![Starin and Stress Distribution for RC Beam](BeamStrainStress.svg)
     
