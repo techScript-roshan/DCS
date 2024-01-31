@@ -75,12 +75,16 @@ On completion of the course, the student will have the ability to:
 ## All design and analysis should be based on Limit State Methods.
 
 #### Text Books: 
-1. Reinforced Concrete Design; Pillai & Menon; Tata McGraw-Hill Education 66
+1. Design of Reinforced Concrete Structures; N. Subramanian; Oxford University Press, ISBN: 978-0198086949
 2. Limit state Design of Reinforced Concrete; Varghese P C; Prentice-Hall of India Pvt. Ltd 
-3. Reinforced Cement Concrete, Mallick and Rangasamy; Oxford-IBH Reference Books: 
+3. Reinforced Cement Concrete, Mallick and Rangasamy; Oxford-IBH
+4. Reinforced Concrete Design; Pillai & Menon; Tata McGraw-Hill Education
 #### Reference Books:
 1. IS 456-2000: Indian Standard. Plain and Reinforced concrete -Code of practice
 2. IS 3370-2009: Code of practice for concrete structures for storage of liquids
 3. SP 16: Design Aids 
 4. SP 24: Explanatory hand book 
 5. SP 34: Detailing of Reinforcement
+6. [Design of Reinforced Concrete Structures, Prof. N. Dhang](https://nptel.ac.in/courses/105105105)
+7. [Advanced Reinforced Concrete Design, Prof S. Suriya Prakash](https://nptel.ac.in/courses/105106224)
+
