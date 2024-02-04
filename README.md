@@ -1,10 +1,10 @@
 # T-Beam
--![1](introimg.jpg)
+-![1](introimg1.jpg)
 ## Assumptions 
 The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23.1.1]
   1. Web and slab effectively bond together or are cast integrally
   2. If the main reinforcement in the slab or flange is parallel to the beam then the longitudinal reinforcement will be 60% of the main reinforcement, as shown:
-     -![2](23.1.1.jpg) 
+     -![2](23.1.11.jpg) 
 ## Analysis and Design
 <math>
 Three cases to be considered while designing the flanged beam -
@@ -12,7 +12,7 @@ Three cases to be considered while designing the flanged beam -
   Case 2. Neutral Axis lies below the flange (xu &#62; Df) & flange is uniformly stressed (Df/d &#60; 0.2)
   Case 3. Neutral Axis lies below the flange (xu &#62; Df) & flange is not uniformly stressed (Df/d &#62; 0.2) 
   
-  -![3](cases3.jpg)
+  -![3](cases31.jpg)
   
 To check whether NA lies within the flange or not - 
   Df/d = (0.0035-0.002)/(0.0038+0.0035)
