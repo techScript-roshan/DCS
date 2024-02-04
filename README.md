@@ -10,8 +10,9 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
 Three cases to be considered while designing the flanged beam -
   Case 1. Neutral Axis lies within the flange (xu &#60; Df)
   Case 2. Neutral Axis lies below the flange (xu &#62; Df) & flange is uniformly stressed (Df/d &#60; 0.2)
-  Case 3. Neutral Axis lies below the flange (xu &#62; Df) & flange is not uniformly stressed (Df/d &#62; 0.2)
-      -![3](cases3.jpg)
+  Case 3. Neutral Axis lies below the flange (xu &#62; Df) & flange is not uniformly stressed (Df/d &#62; 0.2) 
+  
+  -![3](cases3.jpg)
   
 To check whether NA lies within the flange or not - 
   Df/d = (0.0035-0.002)/(0.0038+0.0035)
