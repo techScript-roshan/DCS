@@ -1,3 +1,4 @@
+![0](chain.gif)
 # T-Beam
 -![1](introimg1.jpg)
 ## Assumptions 
