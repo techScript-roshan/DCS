@@ -23,7 +23,7 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
   <p>Considering the three cases, checking where NA lies -</p>
   <p>Case 1. Neutral Axis lies within the flange (x<sub>u</sub> &#60; D<sub>f</sub>)</p>
   
-  -![4](within.png)
+  -![4](within11.png)
     <p>M<sub>u,lim</sub> = 0.36f<sub>ck</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>)bf [IS 456 - 2000 ANNEX-G]</p>
   <p>x<sub>u</sub>/d can be calculated from - M<sub>u,lim</sub> = 0.36f<sub>ck</sub>(x<sub>u</sub>/d)(1-0.42(x<sub>u</sub>/d))b<sub>f</sub>d<sup>2</sup></p>
   
@@ -45,7 +45,7 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
     <p>M<sub>u</sub> = = 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>) + 0.45f<sub>ck</sub>y<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)(d-0.5y<sub>f</sub>) </p>
     <p>Note that - y<sub>f</sub> &#60; Df always</p>
     
-  -![5](below.png)
+  -![5](below11.png)
 ### Design steps for T-Beam
 <p>Step 1. Assume the dimensions of T-Beam </p>
 <p>d = span/12 to Span/15 </p>
