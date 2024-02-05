@@ -1,6 +1,7 @@
 # T-Beam
 -![1](introimg1.jpg)
 ## Assumptions 
+$${J(\theta) =\frac{1}{2m} [\sum^m_{i=1}(h_\theta(x^{(i)}) - y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j}$$
 The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23.1.1]
   1. Web and slab effectively bond together or are cast integrally
   2. If the main reinforcement in the slab or flange is parallel to the beam then the longitudinal reinforcement will be 60% of the main reinforcement, as shown:
@@ -15,7 +16,7 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
   -![3](cases31.jpg)
   
 <p>To check whether NA lies within the flange or not - </p>
-  <p>D<sub>f</sub>/d = (0.0035-0.002)/(0.0038+0.0035)</p>
+  <p>$$\frac{D_f}{d} = \frac{0.0035-0.002}{0.0038+0.0035}$$</p>
   <p>D<sub>f</sub>/d = 0.2 </p>
   <p>x<sub>u</sub>/d &#60; D<sub>f</sub>/d &rarr; NA lies within the flange</p>
   <p>x<sub>u</sub>/d &#62; D<sub>f</sub>/d &rarr; NA lies below the flange area</p>
@@ -54,14 +55,14 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
      <p>d/2 to d/3</p>
 <p>Effective cover to be assumed as 40 to 50 mm</p>
 
-<p>Step 2. Calculate the effective span of the beam (lo)</p>
+<p>Step 2. Calculate the effective span of the beam (l<sub>o</sub>)</p>
 <p>l<sub>o</sub> being c/c of two supports or between two points of contraflexure (assume width of supports if not given)</p>
 
 <p>Step 3. Find the effective width of flange (b<sub>f</sub>) [IS 456 - 2000 Cl 23.1.2]</p>
 <p>In no case should bf be more than b<sub>w</sub> + 1/2(clear distance to the adjacent beams on either side)</p>
-<p>b<sub>f</sub> = l<sub>o</sub>/6 + b<sub>w</sub> + 6D<sub>f</sub> </p>
+<p>$$b_f = \frac{l_o}{6} + b_w + 6D_f$$ </p>
 <p>For Isolated T-Beam &rarr;</p>
-<p>b<sub>f</sub> = l<sub>o</sub>/((l<sub>o</sub>/b)+4) + b<sub>w</sub></p>
+<p>$$b_f = \frac{l_o}{((\frac{l_o}{b})+4)} + b_w$$</p>
 
 <p>Step 4. Load Calculations</p>
 <p>Calculate the self-weight/dead load (W<sub>d</sub>) of the T-Beam</p>
@@ -72,39 +73,39 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
 <p>Find the factored design load (factored design UDL per m length of the beam)</p>
 
 <p>Step 5. Calculate factored design moment (Ultimate maximum bending moment Mu)</p>
-<p>M<sub>u</sub> = W<sub>u</sub>l<sup>2</sup>/8</p>
+<p>$$M_u = \frac{W_ul^2}{8}$$</p>
 
 <p>Step 6. Find the area of reinforcement</p>
 <p>Different cases that arrive are -</p>
 <p>(a) Assume D<sub>f</sub>/x<sub>u</sub> &le; 0.43 and neglect contribution of rib in resisting moment</p>
 <p>Calculate M<sub>u,lim</sub></p>
- <p> M<sub>u,lim</sub> = 0.45f<sub>ck</sub>D<sub>f</sub>b<sub>f</sub>(d-0.5D<sub>f</sub>)</p>
+ <p> $$M_{u,lim} = 0.45f_ckD_fb_f(d-0.5D_f)$$</p>
 <p>If M<sub>u</sub> &#60; M<sub>u,lim</sub> Singly reinforced section is to be designed </p>
 <p>If M<sub>u</sub> &#62; M<sub>u,lim</sub> Doubly reinforced section is to be designed </p>
 
 <p>(b) If M<sub>u</sub> &#60; M<sub>u,lim</sub> determine ultimate moment of resistance M<sub>u</sub>'</p>
- <p> M<sub>u'</sub> = 0.36f<sub>ck</sub>b<sub>f</sub>D<sub>f</sub>(d-0.42D<sub>f</sub>) [Assuming x<sub>u</sub> = D<sub>f</sub> i.e., considering that the neutral axis coincides with the bottom of the flange]</p>
+ <p> $$M_u^{'} = 0.36f_{ck}b_fD_f(d-0.42D_f)$$ [Assuming x<sub>u</sub> = D<sub>f</sub> i.e., considering that the neutral axis coincides with the bottom of the flange]</p>
 
   <p>If M<sub>u</sub> &#60; M<sub>u'</sub> then x<sub>u</sub> &#60; D<sub>f</sub></p>
   <p>&there4; Find A<sub>st</sub> from the relation:</p>
-    <p>M<sub>u</sub> = 0.87f<sub>y</sub>A<sub>st</sub>[d-(f<sub>s</sub>A<sub>st</sub>/f<sub>ck</sub>b<sub>f</sub>)]</p>
+    <p>$$M_u = 0.87f_yA_{st}[d-(\frac{f_yA_{st}}{f_{ck}b_f})]$$</p>
 
 <p>(c) If M<sub>u</sub> &#62; M<sub>u'</sub> but less than M<sub>u</sub>,lim determine ultimate moment of resistance M<sub>u"</sub></p>
- <p> M<sub>u"</sub> = 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>) + 0.45f<sub>ck</sub>D<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)(d-0.5D<sub>f</sub>) [Assume D<sub>f</sub>/x = 0.43]</p>
+ <p> $$M_u^" = 0.36f_{ck}b_wx_u(d-0.42x_u) + 0.45f_{ck}D_f(b_f-b_w)(d-0.5D_f)$$ [Assume D<sub>f</sub>/x = 0.43]</p>
 
   <p>If M<sub>u</sub> &#62; M<sub>u"</sub> then D<sub>f</sub>/x<sub>u</sub> &#60; 0.43</p>
 
   <p>Now determine x<sub>u</sub> corresponding to M<sub>u</sub> for D<sub>f</sub>/x<sub>u</sub> &#60; 0.43</p>
-   <p> M<sub>u</sub> = 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>) + 0.45f<sub>ck</sub>D<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)(d-0.5D<sub>f</sub>)</p>
+   <p> $$M_u = 0.36f_{ck}b_wx_u(d-0.42x_u) + 0.45f_{ck}D_f(b_f-b_w)(d-0.5D_f)$$</p>
   <p>Calculate A<sub>st</sub> from the known value of x<sub>u</sub></p>
-    <p>A<sub>st</sub> = 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub> + 0.45f<sub>ck</sub>D<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)/0.87f<sub>y</sub></p>
+    <p>$$A_st = \frac{0.36f_{ck}b_wx_u + 0.45f_{ck}y_f(b_f-b_w)}{0.87f_y}$$</p>
 
   <p>If M<sub>u</sub> &#60; M<sub>u"</sub> then D<sub>f</sub>/x<sub>u</sub> &#62; 0.43</p>
 
   <p>Now determine x<sub>u</sub> corresponding to M<sub>u</sub> by solving the quadratic equation in x<sub>u</sub></p>
-   <p> M<sub>u</sub> = 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>) + 0.45f<sub>ck</sub>y<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)(d-0.5y<sub>f</sub>)</p>
+   <p>$$M_u = 0.36f_{ck}b_wx_u(d-0.42x_u) + 0.45f_{ck}y_f(b_f-b_w)(d-0.5y_f)$$</p>
   <p>Calculate A<sub>st</sub> from the known value of x<sub>u</sub> </p>
-    <p>A<sub>st</sub> = 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub> + 0.45f<sub>ck</sub>y<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)0.87f<sub>y</sub></p>
+    <p>$$A_st = \frac{0.36f_{ck}b_wx_u + 0.45f_{ck}y_f(b_f-b_w)}{0.87f_y}$$</p>
 
 <p>Step 7. Check for Shear and design shear reinforcement if needed.</p>
 <p>Step 8. Check for development length </p>
@@ -114,33 +115,32 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
 ### Example:
 
 <p>Given values:</p>
-<p>bf = 1000 mm</p>
-<p>Df = 125 mm</p>
-<p>bw = 250 mm</p>
+<p>b<sub>f</sub> = 1000 mm</p>
+<p>D<sub>f</sub> = 125 mm</p>
+<p>b<sub>w</sub> = 250 mm</p>
 <p>D = 400 mm</p>
 <p>Area of tensile steel = 5-20&Phi;</p>
 
 <p>d = D - clear cover - &Phi;/2</p>
   <p>= 400 - 25 - 20/2</p>
  <p> = 365 mm</p>
-<p>Ast = 5&Pi;(20)^2/4</p>
+<p>$$Ast = \frac{5\Pi(20)^2}{4}$$</p>
 
 <p>1. Assuming tensile steel yields:</p>
- <p> xu = 0.87fyAst/0.36fckbf</p>
-    <p> = 52.48 mm</p>
- <p> xu &#60; Df, So we can say that NA is within the flange</p>
+ <p> $$x_u = \frac{0.87f_yA_{st}}{0.36f_{ck}b_f}$$</p>
+    <p> $$= 52.48 mm$$</p>
+ <p>x<sub>u</sub> &#60; D<sub>f</sub>, So we can say that NA is within the flange</p>
 
 <p>2. Lever arm depth</p>
-   <p>z = (d - 0.42xu)</p>
-     <p>= 342.9584 mm</p>
+   <p>$$z = (d - 0.42x_u)$$</p>
+     <p>$$= 342.9584 mm$$</p>
 
 <p>3. Moment of resistance due to concrete failure</p>
-  <p> MORc = Mu = Cz = 0.36fckbfxuz = 194.378 KNm</p>
+  <p>$$MOR_c = M_u = Cz = 0.36f_{ck}b_fx_uz = 194.378 KNm$$</p>
 
 <p>4. Moment of resistance due to steel yield</p>
- <p>  MORt = Mu = Tz = 0.87fyAstz = 194.4 KNm</p>
+ <p>$$MOR_t = M_u = Tz = 0.87f_yA_{st}z = 194.4 KNm$$</p>
 
  <p> NA lies within the flange so we can calculate the Moment of resistance for both concrete and steel.</p>
-  
 </math>
 Thank you!
