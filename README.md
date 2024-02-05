@@ -144,5 +144,3 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
   
 </math>
 Thank you!
-
-![6](6aadik.gif)
