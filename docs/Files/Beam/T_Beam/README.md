@@ -1,7 +1,15 @@
 # T-Beam
 -![1](introimg1.jpg)
 ## Assumptions 
-$${J(\theta) =\frac{1}{2m} [\sum^m_{i=1}(h_\theta(x^{(i)}) - y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j}$$
+6.2.1 Assumptions
+<p>The following assumptions are relevant in the computation of the ultimate flexural strength of reinforced concrete sections [IS: 456- 2000 Clause 38.1]</p>
+<p>1) Plane sections normal to the axis remain plane after bending.</p>
+<p>2) The maximum strain in concrete at the extreme compression fiber is assumed as 0.003 in flexure</p>
+<p>3) The relationship between the compressive stress distribution in concrete and the strain in concrete may be assumed to be rectangle, trapezoid, parabola, or any other shape which results in strength prediction in substantial agreement with the test results. The recommended stress-strain curve is shown below which shows the characteristic and design strength curves.</p>
+<p>4) Tensile strength of concrete is ignored.</p>
+<p>5) The stresses in the reinforcement are obtained from the stress-strain curves shown below. For design purposes the partial safety factor Y<sub>m</sub> equal to 1.15 is applied to compute the design strength.</p>
+<p>6) The maximum strain in the tension reinforcement in the section at the collapse limit state shall be not less than $$[\frac{f_y}{1.15E_s}+0.002] = [\frac{0.87f_y}{E_s}+0.002]$$</p>
+   
 The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23.1.1]
   1. Web and slab effectively bond together or are cast integrally
   2. If the main reinforcement in the slab or flange is parallel to the beam then the longitudinal reinforcement will be 60% of the main reinforcement, as shown:
@@ -25,29 +33,33 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
   <p>Case 1. Neutral Axis lies within the flange (x<sub>u</sub> &#60; D<sub>f</sub>)</p>
   
   -![4](within11.png)
-    <p>M<sub>u,lim</sub> = 0.36f<sub>ck</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>)bf [IS 456 - 2000 ANNEX-G]</p>
-  <p>x<sub>u</sub>/d can be calculated from - M<sub>u,lim</sub> = 0.36f<sub>ck</sub>(x<sub>u</sub>/d)(1-0.42(x<sub>u</sub>/d))b<sub>f</sub>d<sup>2</sup></p>
+
+  <p>$$M_{u,lim} = 0.36f_{ck}x_u(d-0.42x_u)b_f$$ [IS 456 - 2000 ANNEX-G]</p>
+  <p>x<sub>u</sub>/d can be calculated from - $$M_{u,lim} = 0.36f_{ck}(\frac{x_u}{d})(1-0.42(\frac{x_u}{d}))b_fd^2$$</p>
   
   <p>When x<sub>u</sub> = D<sub>f</sub>, replacing x<sub>u</sub> with D<sub>f</sub>:</p>
-    <p>M<sub>u.lim</sub> = 0.36f<sub>ck</sub>D<sub>f</sub>(d-0.42D<sub>f</sub>)b<sub>f</sub></p>
+    <p>$$M_{u.lim} = 0.36f_{ck}D_f(d-0.42D_f)b_f$$</p>
 
   <p>If only a cross-section of the beam is given -</p>
-    <p>depth of neutral axis = x<sub>u</sub>/d = 0.87f<sub>y</sub>A<sub>st</sub>/0.36f<sub>ck</sub>b<sub>f</sub>d [IS 456 - 2000 ANNEX-G Cl 38.1 G-1.1]</p>
+    <p>depth of neutral axis = $$\frac{x_u}{d} = \frac{0.87f_yA_{st}}{0.36f_{ck}b_fd}$$ [IS 456 - 2000 ANNEX-G Cl 38.1 G-1.1]</p>
     <p>or</p>
-    <p>xu = 0.87f<sub>y</sub>A<sub>st</sub>/0.36f<sub>ck</sub>b<sub>f</sub></p>
+    <p>$$x_u = \frac{0.87f_yA_{st}}{0.36f_{ck}b_f}$$</p>
 
   <p>Case 2. Neutral Axis lies below the flange (x<sub>u</sub> &#62; D<sub>f</sub>) & flange is uniformly stressed (D<sub>f/</sub>d &#60; 0.2)</p>
-    <p>M<sub>u1</sub> = 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>)</p>
-    <p>M<sub>u2</sub> = 0.45f<sub>ck</sub>D<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)(d-0.5D<sub>f</sub>)</p>
-    <p>M<sub>u</sub> = M<sub>u1</sub> + M<sub>u2</sub></p>
-       <p>= 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>) + 0.45f<sub>ck</sub>D<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)(d-0.5D<sub>f</sub>) [IS 456 - 2000 ANNEX-G G-2.2]</p>
+    <p>$$M_{u1} = 0.36f_{ck}b_wx_u(d-0.42x_u)$$</p>
+    <p>$$M_{u2} = 0.45f_{ck}D_f(b_f-b_w)(d-0.5D_f)$$</p>
+    <p>$$M_u = M_{u1} + M_{u2}$$</p>
+       <p>$$M_u = 0.36f_{ck}b_wx_u(d-0.42x_u) + 0.45f_{ck}D_f(b_f-b_w)(d-0.5D_f)$$ [IS 456 - 2000 ANNEX-G G-2.2]</p>
+       
   <p>Case 3. Neutral Axis lies below the flange (x<sub>u</sub> &#62; D<sub>f</sub>) & flange is not uniformly stressed (D<sub>f</sub>/d &#62; 0.2)</p>
-    <p>y<sub>f</sub> = 0.15x<sub>u</sub> + 0.65D<sub>f</sub> instead of D<sub>f</sub> is to be substituted in - [IS 456 - 2000 ANNEX-G G-2.2.1]</p>
-    <p>M<sub>u</sub> = = 0.36f<sub>ck</sub>b<sub>w</sub>x<sub>u</sub>(d-0.42x<sub>u</sub>) + 0.45f<sub>ck</sub>y<sub>f</sub>(b<sub>f</sub>-b<sub>w</sub>)(d-0.5y<sub>f</sub>) </p>
+    <p>$$y_f = 0.15x_u + 0.65D_f$$ instead of D<sub>f</sub> is to be substituted in - [IS 456 - 2000 ANNEX-G G-2.2.1]</p>
+    <p>$$M_u = 0.36f_{ck}b_wx_u(d-0.42x_u) + 0.45f_{ck}y_f(b_f-b_w)(d-0.5y_f)$$ </p>
     <p>Note that - y<sub>f</sub> &#60; Df always</p>
     
   -![5](below11.png)
+  
 ### Design steps for T-Beam
+
 <p>Step 1. Assume the dimensions of T-Beam </p>
 <p>d = span/12 to Span/15 </p>
 <p>b<sub>w</sub> = 150 mm to 400 mm </p>
