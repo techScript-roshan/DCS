@@ -61,17 +61,21 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
 ### Design steps for T-Beam
 
 <p>Step 1. Assume the dimensions of T-Beam </p>
-<p>d = span/12 to Span/15 </p>
+<p>effective depth (d) = span/12 to Span/15 </p>
 <p>b<sub>w</sub> = 150 mm to 400 mm </p>
     <p>or</p>
      <p>d/2 to d/3</p>
 <p>Effective cover to be assumed as 40 to 50 mm</p>
+<p>Overall depth (D) = effective depth (d) + clear cover</p>
 
 <p>Step 2. Calculate the effective span of the beam (l<sub>o</sub>)</p>
+<p>It will be the least value of:</p>
+<p>1. Centre to centre of bearings</p>
+<p>2. Clear span + effective depth</p>
 <p>l<sub>o</sub> being c/c of two supports or between two points of contraflexure (assume width of supports if not given)</p>
 
 <p>Step 3. Find the effective width of flange (b<sub>f</sub>) [IS 456 - 2000 Cl 23.1.2]</p>
-<p>In no case should bf be more than b<sub>w</sub> + 1/2(clear distance to the adjacent beams on either side)</p>
+<p>In no case should b<sub>f</sub> be more than b<sub>w</sub> + 1/2(clear distance to the adjacent beams on either side)</p>
 <p>$$b_f = \frac{l_o}{6} + b_w + 6D_f$$ </p>
 <p>For Isolated T-Beam &rarr;</p>
 <p>$$b_f = \frac{l_o}{((\frac{l_o}{b})+4)} + b_w$$</p>
@@ -84,8 +88,9 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
 <p>W<sub>u</sub> = W<sub>s</sub> + W<sub>d</sub></p>
 <p>Find the factored design load (factored design UDL per m length of the beam)</p>
 
-<p>Step 5. Calculate factored design moment (Ultimate maximum bending moment Mu)</p>
+<p>Step 5. Calculate factored design moment (Ultimate maximum bending moment Mu) and Shear Force</p>
 <p>$$M_u = \frac{W_ul^2}{8}$$</p>
+<p>$$V_u = \frac{W_ul}{2}$$</p>
 
 <p>Step 6. Find the area of reinforcement</p>
 <p>Different cases that arrive are -</p>
@@ -119,7 +124,12 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
   <p>Calculate A<sub>st</sub> from the known value of x<sub>u</sub> </p>
     <p>$$A_st = \frac{0.36f_{ck}b_wx_u + 0.45f_{ck}y_f(b_f-b_w)}{0.87f_y}$$</p>
 
-<p>Step 7. Check for Shear and design shear reinforcement if needed.</p>
+<p>Step 7. Check for shear and design shear reinforcement if needed.</p>
+<p>Nominal Shear Stress $$&Tau;_v = [\frac{V_u}{b_wd}]$$</p>
+<p>$$p_t = [\frac{100A_{st)}{b_wd}]$$</p>
+<p>Calculate &Tau;<sub>c</sub> (shear stress in concrete) corresponding to the value of &Tau;<sub>v</sub>
+<p>If &Tau;<sub>c</sub> &#62; &Tau;<sub>v</sub> then there is no need to design shear reinforcement.</p>
+
 <p>Step 8. Check for development length </p>
 <p>Step 9. Check for deflection to satisfy the limit state of serviceability.</p>
 <p>Step 10. Write a summary of the design and draw a neat sketch.</p>
