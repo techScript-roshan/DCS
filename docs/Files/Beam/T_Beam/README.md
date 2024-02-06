@@ -27,6 +27,7 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
   1. Web and slab effectively bond together or are cast integrally
   2. If the main reinforcement in the slab or flange is parallel to the beam then the longitudinal reinforcement will be 60% of the main reinforcement, as shown:
      -![2](23.1.11.jpg)
+     -![2.1](iscode.jpg)
 ## Analysis and Design
 <math>
 <p>Three cases to be considered while designing the flanged beam -</p>
