@@ -1,6 +1,6 @@
 # T-Beam
--![0](flanged.jpg)
--![1](introimg1.jpg)
+-![1](Flanged.jpg)
+-![1.1](introimg1.jpg)
 ## Assumptions 
 
 <p>Following are the assumptions made in the theory of Simple Bending: </p>
@@ -16,11 +16,11 @@
 <p>2) The maximum strain in concrete at the extreme compression fiber is assumed as 0.003 in flexure</p>
 <p>3) The relationship between the compressive stress distribution in concrete and the strain in concrete may be assumed to be rectangle, trapezoid, parabola, or any other shape which results in strength prediction in substantial agreement with the test results. The recommended stress-strain curve is shown below which shows the characteristic and design strength curves.</p>
 
--![1.1](curves1.jpg) 
+-![1.2](curves1.jpg) 
 <p>4) Tensile strength of concrete is ignored.</p>
 <p>5) The stresses in the reinforcement are obtained from the stress-strain curves shown below. For design purposes, the partial safety factor Y<sub>m</sub> equal to 1.15 is applied to compute the design strength.</p>
 
--![1.2](stress_strain.jpg) 
+-![1.3](stress_strain.jpg) 
 <p>6) The maximum strain in the tension reinforcement in the section at the collapse limit state shall be not less than $$[\frac{f_y}{1.15E_s}+0.002] = [\frac{0.87f_y}{E_s}+0.002]$$</p>
    
 The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23.1.1]
