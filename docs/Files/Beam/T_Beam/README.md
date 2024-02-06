@@ -1,5 +1,5 @@
 # T-Beam
--![1](Flanged.jpg)
+-![1](Flanged1.jpg)
 -![1.1](introimg1.jpg)
 ## Assumptions 
 
