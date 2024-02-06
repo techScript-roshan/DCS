@@ -4,12 +4,11 @@
 ## Assumptions 
 
 <p>Following are the assumptions made in the theory of Simple Bending: </p>
-<p>The material of the beam is homogenous and isotropic. </p>
-<p>The beam is initially straight, and all the longitudinal fibers bend in circular arcs with a common center of curvature. </p>
-<p>Members have symmetric cross-sections and are subjected to bending in the plane of symmetry. </p>
-<p>The beam is subjected to pure bending and the effect of shear is neglected. </p>
-<p>Plane sections through a beam, taken normal to the axis of the beam remain plane after the beam is subjected to bending. </p>
-<p>The radius of curvature is large as compared to the dimensions of the beam. </p>
+<p>1. The material of the beam is homogenous and isotropic. </p>
+<p>2. The beam is initially straight, and all the longitudinal fibers bend in circular arcs with a common center of curvature. </p>
+<p>3. Members have symmetric cross-sections and are subjected to bending in the plane of symmetry. </p>
+<p>4. The beam is subjected to pure bending and the effect of shear is neglected. </p>
+
 
 <p>The following assumptions are relevant in the computation of the ultimate flexural strength of reinforced concrete sections: [IS: 456- 2000 Clause 38.1]</p>
 <p>1) Plane sections normal to the axis remain plane after bending. (strain at any point on the cross-section is directly proportional to its distance from the neutral axis)</p>
