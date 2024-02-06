@@ -108,7 +108,7 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
 
 <p>Step 6. Find the area of reinforcement</p>
 <p>Different cases that arrive are -</p>
-<p>(a) Assume D<sub>f</sub>/x<sub>u</sub> &le; 0.43 and neglect contribution of rib in resisting moment</p>
+<p>(a) Assume D<sub>f</sub>/x<sub>u</sub> &le; 0.43</p>
 <p>Calculate M<sub>u,lim</sub></p>
  <p> $$M_{u,lim} = 0.45f_ckD_fb_f(d-0.5D_f)$$</p>
 <p>If M<sub>u</sub> &#60; M<sub>u,lim</sub> Singly reinforced section is to be designed </p>
