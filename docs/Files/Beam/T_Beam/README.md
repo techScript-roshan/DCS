@@ -1,13 +1,26 @@
 # T-Beam
+-![0](flanged.jpg)
 -![1](introimg1.jpg)
 ## Assumptions 
-6.2.1 Assumptions
-<p>The following assumptions are relevant in the computation of the ultimate flexural strength of reinforced concrete sections [IS: 456- 2000 Clause 38.1]</p>
-<p>1) Plane sections normal to the axis remain plane after bending.</p>
+
+<p>Following are the assumptions made in the theory of Simple Bending: </p>
+<p>The material of the beam is homogenous and isotropic. </p>
+<p>The beam is initially straight, and all the longitudinal fibers bend in circular arcs with a common center of curvature. </p>
+<p>Members have symmetric cross-sections and are subjected to bending in the plane of symmetry. </p>
+<p>The beam is subjected to pure bending and the effect of shear is neglected. </p>
+<p>Plane sections through a beam, taken normal to the axis of the beam remain plane after the beam is subjected to bending. </p>
+<p>The radius of curvature is large as compared to the dimensions of the beam. </p>
+
+<p>The following assumptions are relevant in the computation of the ultimate flexural strength of reinforced concrete sections: [IS: 456- 2000 Clause 38.1]</p>
+<p>1) Plane sections normal to the axis remain plane after bending. (strain at any point on the cross-section is directly proportional to its distance from the neutral axis)</p>
 <p>2) The maximum strain in concrete at the extreme compression fiber is assumed as 0.003 in flexure</p>
 <p>3) The relationship between the compressive stress distribution in concrete and the strain in concrete may be assumed to be rectangle, trapezoid, parabola, or any other shape which results in strength prediction in substantial agreement with the test results. The recommended stress-strain curve is shown below which shows the characteristic and design strength curves.</p>
+
+-![1.1](curves1.jpg) 
 <p>4) Tensile strength of concrete is ignored.</p>
-<p>5) The stresses in the reinforcement are obtained from the stress-strain curves shown below. For design purposes the partial safety factor Y<sub>m</sub> equal to 1.15 is applied to compute the design strength.</p>
+<p>5) The stresses in the reinforcement are obtained from the stress-strain curves shown below. For design purposes, the partial safety factor Y<sub>m</sub> equal to 1.15 is applied to compute the design strength.</p>
+
+-![1.2](stress_strain.jpg) 
 <p>6) The maximum strain in the tension reinforcement in the section at the collapse limit state shall be not less than $$[\frac{f_y}{1.15E_s}+0.002] = [\frac{0.87f_y}{E_s}+0.002]$$</p>
    
 The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23.1.1]
@@ -126,7 +139,7 @@ The slab is assumed to act as a compression flange only if: [IS 456 - 2000 Cl 23
 
 <p>Step 7. Check for shear and design shear reinforcement if needed.</p>
 <p>Nominal Shear Stress $$&Tau;_v = [\frac{V_u}{b_wd}]$$</p>
-<p>$$p_t = [\frac{100A_{st)}{b_wd}]$$</p>
+<p>$$p_t = [\frac{100A_{st}}{b_wd}]$$</p>
 <p>Calculate &Tau;<sub>c</sub> (shear stress in concrete) corresponding to the value of &Tau;<sub>v</sub>
 <p>If &Tau;<sub>c</sub> &#62; &Tau;<sub>v</sub> then there is no need to design shear reinforcement.</p>
 
