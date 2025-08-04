@@ -18,10 +18,12 @@
 - Prerequisites:
    - PCCE-102 Solid Mechanics
    - PCCE-105 Concrete Technology
+   - PCCE-113 Structural Engineering
    - PRCE-101 Seminar and Technical Report Writing
    - PCCE-110 Engineering Economics, Estimation and Costing
-   - PCCE-113 Structural Engineering
-   - LPCCE-109 CAD & BIM Laboratory 
+   - LPCCE-109 CAD & BIM Laboratory
+   - ESC-103 Engineering Graphics and Design
+   - ESC-104 Programming for Problem Solving
 
 #### Course Outcomes:
 On completion of the course, the student will have the ability to:
