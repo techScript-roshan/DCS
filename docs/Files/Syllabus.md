@@ -83,7 +83,7 @@ On completion of the course, the student will have the ability to:
 4. Reinforced Concrete Design; Pillai & Menon; Tata McGraw-Hill Education
 #### Reference Books:
 1. IS 456-2000: Indian Standard. Plain and Reinforced concrete -Code of practice
-2. IS 3370-2009: Code of practice for concrete structures for storage of liquids
+2. IS 3370-2021 Part 1, 2, 3 and 4 (Section 1, 2 and 3): Concrete Structures for Retaining Aqueous Liquids — Code of Practice
 3. SP 16: Design Aids 
 4. SP 24: Explanatory hand book 
 5. SP 34: Detailing of Reinforcement
