@@ -40,7 +40,8 @@ On completion of the course, the student will have the ability to:
 ##### Part-A
 1. Design Philosophies 2L + 0T = 2 hours 
    1. Working Stress Method
-   1. Limit State Method
+   1. Limit State Method (Extra: [Evolution](Files/design-philosophies
+/))
 1. Slabs 4L + 1T = 5 hours 
    1. Design of Two way Slabs
 1. Design of Continuous beams 3L + 1T = 4 hours
