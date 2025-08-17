@@ -1,14 +1,12 @@
-Here is the revised essay in plain Markdown format, structured with timeline, mathematical development, international and Indian code references, and focus on how each philosophy emerged by addressing the drawbacks of the earlier one.
-
----
-
 # Evolution of Design Philosophies in Civil Engineering
 
 ## Introduction
 
-Civil engineering design has continuously evolved as our understanding of materials, failures, and mathematics has improved. Each design philosophy was introduced to overcome the limitations of the previous one. This essay traces the historical development of design methods, their mathematical sophistication, and their incorporation into international and Indian codes.
+Civil engineering is the art and science of designing and building structures such as houses, bridges, dams, and skyscrapers. Our design methods, however, have not always been as advanced as they are today. Over centuries, engineers have learned from both successes and failures, while gradually applying mathematics to improve safety and efficiency.
 
----
+The evolution of design philosophies reflects humanity’s growing understanding of strength, safety, and uncertainty in construction. Each new philosophy was introduced to address the shortcomings of the current one. With every step, the role of mathematics became more sophisticated—moving from simple empirical rules to probability-based models.
+
+Historical development of design methods, the growing involvement of mathematics, and their adoption in international standards as well as Indian codes are presented below.
 
 ## 1. Empirical Design (Before 1900s)
 
