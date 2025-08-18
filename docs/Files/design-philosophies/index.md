@@ -14,6 +14,31 @@ In the early stages of engineering, structures were designed based on experience
 
 Limitation: While useful for traditional materials such as stone and timber, empirical design could not ensure safety for modern materials like steel and reinforced concrete.
 
+📜 Ti
+1. Ancient Era (before 1600 AD) – Rule of Thumb and Experience
+
+Builders relied mostly on experience and tradition. The Egyptians built the pyramids (around 2500 BC), the Romans built aqueducts and the Colosseum (around 100 AD). Structures were massive and heavy.
+
+2. 1600–1800 – Beginning of Scientific Approach
+
+The Renaissance initiated interest in science and mathematics. Galileo (1638) studied the strength of beams. Robert Hooke (1678) discovered the law of elasticity ("Hooke’s Law": extension is proportional to force). Engineers began to understand how loads and forces act on materials.
+
+3. 1800–1900 – Elastic Theory and Factor of Safety
+
+Industrial Revolution: bridges, railways, factories.
+
+Many new materials like steel were used, but also many failures occurred.
+
+Example: The Tay Bridge Disaster (Scotland, 1879) collapsed in a storm, killing 75 people.
+
+To avoid failures, engineers introduced the idea of a Factor of Safety (FoS).
+
+Example: If a bridge must carry 100 tons, they designed it for 200 tons.
+
+Mathematics of elasticity and strength of materials became part of engineering education.
+
+👉 Philosophy: "Always keep extra strength as a safety margin."
+
 ---
 
 ## 2. Working Stress Method (WSM)
