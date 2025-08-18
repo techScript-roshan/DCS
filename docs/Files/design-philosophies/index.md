@@ -4,11 +4,18 @@
 
 Civil engineering is the art and science of designing and building structures such as houses, bridges, dams, and skyscrapers. Our design methods, however, have not always been as advanced as they are today. Over centuries, engineers have learned from both successes and failures, while gradually applying mathematics to improve safety and efficiency.
 
-The evolution of design philosophies reflects humanity’s growing understanding of strength, safety, and uncertainty in construction. Each new philosophy was introduced to address the shortcomings of the current one. With every step, the role of mathematics became more sophisticated—moving from simple empirical rules to probability-based models.
+The evolution of design philosophies reflects humanity’s growing understanding of strength, safety, and uncertainty in construction. Each new philosophy was introduced to address the shortcomings of the current one. With every step, the role of mathematics became more sophisticated, moving from simple empirical rules to probability-based models.
 
 Historical development of design methods, the growing involvement of mathematics, and their adoption in international standards as well as Indian codes are presented below.
 
 ## 1. Empirical Design (Before 1900s)
+
+Vishwakarma is considered as the god of engineers, architects, and craftsmen. He is considered the architect and chief engineer of the gods, credited with constructing their heavenly abodes, celestial weapons and chariots. 
+
+- In Satya Yuga, he built Swarg Loka (heaven).
+- In Treta Yuga, he built 'Sone ki Lanka' (Golden Lanka).
+- In Dwapar Yuga, he built Dwarka (Krishna's city).
+- In Kali Yuga, he constructed Indraprastha (Pandavas’ capital)
 
 In the early stages of engineering, structures were designed based on experience and rules of thumb. Builders used proportions observed from successful structures like arches, bridges, and cathedrals. Mathematics was minimal, usually limited to geometry and simple arithmetic.
 
@@ -78,12 +85,13 @@ ULM focused only on collapse safety and ignored serviceability aspects such as d
 
 ### Key Ideas
 
-LSM combined the strengths of WSM and ULM. It introduced two categories of limit states:
+LSM combined the strengths of WSM and ULM. It introduced different categories of limit states:
 
 1. Ultimate Limit States (safety against collapse)
 2. Serviceability Limit States (deflection, vibration, cracking, durability)
 
 Loads and material strengths were treated with different partial safety factors.
+
 Mathematics: Probability concepts introduced indirectly, statistical calibration of load and resistance factors.
 
 ### Advantages over ULM
@@ -92,13 +100,11 @@ Mathematics: Probability concepts introduced indirectly, statistical calibration
 * More realistic treatment of loads and materials
 * Adopted worldwide and still dominant today
 
-### Limitation (leading to next method)
-
-Safety factors were semi-probabilistic, based on judgment and calibration. They did not fully reflect probability of failure.
-
----
-
 ## 5. Reliability-Based and Probability-Based Design
+
+### Limitation of LSM
+
+Partial safety factors are semi-probabilistic, based on judgment and calibration. They do not fully reflect probability of failure.
 
 ### Timeline
 
@@ -110,6 +116,7 @@ Safety factors were semi-probabilistic, based on judgment and calibration. They 
 ### Key Ideas
 
 Probability theory is used to directly quantify the safety level. Instead of fixed safety factors, the design ensures a target reliability index (β), which corresponds to a very small probability of failure (Pf).
+
 Mathematics: Advanced statistics, probability distributions, reliability index (β), Monte Carlo simulation, stochastic models.
 
 ### Advantages over LSM
@@ -118,15 +125,11 @@ Mathematics: Advanced statistics, probability distributions, reliability index (
 * Target safety levels can be set for different structures (e.g., higher for nuclear plants, lower for temporary structures)
 * Provides a scientific link between mathematics and safety philosophy
 
----
-
 ## Research Trend
 
 * Reliability-based design is actively studied in structural engineering, offshore structures, earthquake engineering, and risk assessment.
 * Computer power and advanced statistical models have made it practical to apply probability methods.
 * Many countries are gradually integrating these ideas into codes, though in practice most design still uses LSM with factors calibrated from reliability studies.
-
----
 
 ## Conclusion
 
@@ -138,7 +141,3 @@ The evolution of design philosophies shows a gradual shift:
 * To fully probabilistic approaches (Reliability-based design)
 
 Each step required deeper mathematical sophistication, from simple elastic theory to nonlinear plastic theory, and finally to probability and statistics. International and Indian standards reflect this progression, with current research pointing towards full adoption of reliability-based methods in the future.
-
----
-
-Would you like me to also add a **table comparing codes with their year/version and corresponding design philosophy**, so that the timeline is easier to see at a glance?
