@@ -15,10 +15,10 @@ Historical development of design methods, the growing involvement of mathematics
 ## 1. Empirical Design (Before 1900s)
 
 - **Vishwakarma** is considered as the god of engineers, architects, and craftsmen. He is the architect and chief engineer of the gods, credited with constructing their heavenly abodes, celestial weapons, and chariots.  
-  - In Satya Yuga, he built Swarg Loka (heaven).  
-  - In Treta Yuga, he built 'Sone ki Lanka' (Golden Lanka).  
-  - In Dwapar Yuga, he built Dwarka (Krishna's city).  
-  - In Kali Yuga, he constructed Indraprastha (Pandavas’ capital).
+  - In Satya Yuga (Satyug), he built Swarg Loka (heaven).  
+  - In Treta Yuga (Tretayug), he built 'Sone ki Lanka' (Golden Lanka).  
+  - In Dwapar Yuga (Dwaparyou), he built Dwarka (Krishna's city).  
+  - In Kali Yuga (Kalyug), he constructed Indraprastha (Pandavas’ capital).
  
 ![Vishwakarma - The Divine Architect](vishwakarma_perplexityAI.png)
 
