@@ -14,7 +14,6 @@ In the early stages of engineering, structures were designed based on experience
 
 Limitation: While useful for traditional materials such as stone and timber, empirical design could not ensure safety for modern materials like steel and reinforced concrete.
 
-📜 Ti
 1. Ancient Era (before 1600 AD) – Rule of Thumb and Experience
 
 Builders relied mostly on experience and tradition. The Egyptians built the pyramids (around 2500 BC), the Romans built aqueducts and the Colosseum (around 100 AD). Structures were massive and heavy.
@@ -25,21 +24,7 @@ The Renaissance initiated interest in science and mathematics. Galileo (1638) st
 
 3. 1800–1900 – Elastic Theory and Factor of Safety
 
-Industrial Revolution: bridges, railways, factories.
-
-Many new materials like steel were used, but also many failures occurred.
-
-Example: The Tay Bridge Disaster (Scotland, 1879) collapsed in a storm, killing 75 people.
-
-To avoid failures, engineers introduced the idea of a Factor of Safety (FoS).
-
-Example: If a bridge must carry 100 tons, they designed it for 200 tons.
-
-Mathematics of elasticity and strength of materials became part of engineering education.
-
-👉 Philosophy: "Always keep extra strength as a safety margin."
-
----
+Industrial Revolution: bridges, railways, factories. Many new materials like steel were used, but also many failures occurred. Example: The Tay Bridge Disaster (Scotland, 1879) collapsed in a storm, killing 75 people. To avoid failures, engineers introduced the idea of a Factor of Safety (FoS).
 
 ## 2. Working Stress Method (WSM)
 
@@ -51,6 +36,7 @@ Mathematics of elasticity and strength of materials became part of engineering e
 ### Key Ideas
 
 WSM assumes that both material stress and structural response remain within the elastic range. Safety is ensured by applying a factor of safety (FoS) to the yield or ultimate strength.
+
 Mathematics: Linear elastic theory, simple stress–strain relations, service load analysis.
 
 ### Advantages over Empirical Design
@@ -59,22 +45,19 @@ Mathematics: Linear elastic theory, simple stress–strain relations, service lo
 * Simple mathematics and easy to apply
 * Gave predictable service behavior (deflection, cracking, etc.)
 
-### Limitation (leading to next method)
+## 3. Ultimate Load Method (ULM)
 
 WSM often gave uneconomical sections because the FoS was uniform and did not reflect different uncertainties in loads and material strengths.
 
----
-
-## 3. Ultimate Load Method (ULM)
-
-### Timeline
+### Timeline of ULM
 
 * Internationally: 1950s–1970s
-* India: IS 456:1978 (introduced ultimate load concept), IS 800:1984 (steel)
+* India: IS 456:1964 as an alternative to WSM and in IS 456:1978 as main method of design, IS 800:1984 (steel)
 
 ### Key Ideas
 
 ULM was introduced to achieve more economical designs. Instead of service loads, factored (increased) loads were considered and compared against the ultimate capacity of the member.
+
 Mathematics: Nonlinear stress–strain curves, plastic theory, ultimate strength analysis.
 
 ### Advantages over WSM
@@ -82,18 +65,16 @@ Mathematics: Nonlinear stress–strain curves, plastic theory, ultimate strength
 * More economical use of material
 * Reflected the actual failure strength of structures
 
-### Limitation (leading to next method)
+## 4. Limit State Method (LSM)
+
+### Limitation of ULM
 
 ULM focused only on collapse safety and ignored serviceability aspects such as deflection and cracking.
 
----
-
-## 4. Limit State Method (LSM)
-
-### Timeline
+### Timeline of LSM
 
 * Internationally: Since 1970s, adopted in Eurocodes, ACI, etc.
-* India: IS 456:2000 (RC), IS 800:2007 (Steel structures)
+* India: IS 456:1978 as an alternative to ULM and in IS 456:2000 as main method of design, IS 800:2007 (Steel structures)
 
 ### Key Ideas
 
