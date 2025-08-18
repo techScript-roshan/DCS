@@ -2,8 +2,6 @@
 
 ---
 
-![Vishwakarma - The Divine Architect](vishwakarma_perplexityAI.png)
-
 ## Introduction
 
 Civil engineering is the art and science of designing and building structures such as houses, bridges, dams, and skyscrapers. Our design methods, however, have not always been as advanced as they are today. Over centuries, engineers have learned from both successes and failures, while gradually applying mathematics to improve safety and efficiency.
@@ -16,13 +14,13 @@ Historical development of design methods, the growing involvement of mathematics
 
 ## 1. Empirical Design (Before 1900s)
 
-![Ancient Egyptian Pyramids](https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg)
-
 - **Vishwakarma** is considered as the god of engineers, architects, and craftsmen. He is the architect and chief engineer of the gods, credited with constructing their heavenly abodes, celestial weapons, and chariots.  
   - In Satya Yuga, he built Swarg Loka (heaven).  
   - In Treta Yuga, he built 'Sone ki Lanka' (Golden Lanka).  
   - In Dwapar Yuga, he built Dwarka (Krishna's city).  
   - In Kali Yuga, he constructed Indraprastha (Pandavas’ capital).
+ 
+![Vishwakarma - The Divine Architect](vishwakarma_perplexityAI.png)
 
 In the early stages of engineering, structures were designed based on experience and rules of thumb. Builders used proportions observed from successful structures like arches, bridges, and cathedrals. Mathematics was minimal, usually limited to geometry and simple arithmetic.
 
@@ -31,6 +29,8 @@ In the early stages of engineering, structures were designed based on experience
 #### 1.1 Ancient Era (before 1600 AD) – Rule of Thumb and Experience
 
 Builders relied mostly on experience and tradition. The Egyptians built the pyramids (around 2500 BC), the Romans built aqueducts and the Colosseum (around 100 AD). Structures were massive and heavy.
+
+![Ancient Egyptian Pyramids](https://upload.wikimedia.org/wikipedia/commons/e/e3/Kheops-Pyramid.jpg)
 
 #### 1.2 1600–1800 – Beginning of Scientific Approach
 
