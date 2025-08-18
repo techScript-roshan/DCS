@@ -2,7 +2,7 @@
 
 ---
 
-![Vishwakarma - The Divine Architect](https://upload.wikimedia.org/wikipedia/commons/d/d2/Vishwakarma.jpg)
+![Vishwakarma - The Divine Architect](vishwakarma_perplexityAI.png)
 
 ## Introduction
 
@@ -34,13 +34,13 @@ Builders relied mostly on experience and tradition. The Egyptians built the pyra
 
 #### 1.2 1600–1800 – Beginning of Scientific Approach
 
-![Galileo Galilei](https://upload.wikimedia.org/wikipedia/commons/9/9d/Galileo.arp.300pix.jpg)
+![Galileo Galilei]([https://upload.wikimedia.org/wikipedia/commons/9/9d/Galileo.arp.300pix.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Justus_Sustermans_-_Portrait_of_Galileo_Galilei_%28Uffizi%29.jpg/500px-Justus_Sustermans_-_Portrait_of_Galileo_Galilei_%28Uffizi%29.jpg))
 
 The Renaissance initiated interest in science and mathematics. Galileo (1638) studied the strength of beams. Robert Hooke (1678) discovered the law of elasticity ("Hooke’s Law": extension is proportional to force). Engineers began to understand how loads and forces act on materials.
 
 #### 1.3 1800–1900 – Elastic Theory and Factor of Safety
 
-![Tay Bridge Disaster](https://upload.wikimedia.org/wikipedia/commons/7/75/Tay_bridge_disaster.jpg)
+![Tay Bridge Disaster]([https://upload.wikimedia.org/wikipedia/commons/7/75/Tay_bridge_disaster.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Catastrophe_du_pont_sur_le_Tay_-_1879_-_Illustration.jpg/960px-Catastrophe_du_pont_sur_le_Tay_-_1879_-_Illustration.jpg)
 
 Industrial Revolution: bridges, railways, factories. Many new materials like steel were used, but also many failures occurred. Example: The Tay Bridge Disaster (Scotland, 1879) collapsed in a storm, killing 75 people. To avoid failures, engineers introduced the idea of a Factor of Safety (FoS).
 
@@ -67,8 +67,6 @@ WSM assumes that both material stress and structural response remain within the 
 ---
 
 ## 3. Ultimate Load Method (ULM)
-
-![Arch Bridge Design](https://upload.wikimedia.org/wikipedia/commons/3/3d/Arch_bridge_diagram.png)
 
 WSM often gave uneconomical sections because the FoS was uniform and did not reflect different uncertainties in loads and material strengths.
 
@@ -119,7 +117,7 @@ Loads and material strengths are treated with different partial safety factors.
 
 ## 5. Reliability-Based and Probability-Based Design
 
-![Probability and Safety](https://upload.wikimedia.org/wikipedia/commons/7/7a/Normal_Distribution_PDF.png)
+![Probability and Safety]([https://upload.wikimedia.org/wikipedia/commons/7/7a/Normal_Distribution_PDF.png](https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Probabilistic_Design_Distributions.svg/1024px-Probabilistic_Design_Distributions.svg.png))
 
 ### Limitation of LSM
 
