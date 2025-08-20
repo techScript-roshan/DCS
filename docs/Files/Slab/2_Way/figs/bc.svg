@@ -1,31 +1,154 @@
-<svg width="330" height="280" viewBox="0 0 330 280" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="1350" viewBox="0 0 1200 1350" xmlns="http://www.w3.org/2000/svg">
   <style>
     .slab-top { fill: #888; opacity: 0.85; }
     .slab-edge-cont { fill: #D32F2F; opacity: 0.6; }
     .slab-edge-simp { fill: #388E3C; opacity: 0.6; }
-    .case { font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .case { font-family: 'Arial', sans-serif; font-size: 30px; font-weight: bold; fill: #222; text-anchor: middle; }
+    .legend-label { font-family: 'Arial', sans-serif; font-size: 26px; fill: #222; }
   </style>
-  <!-- Slab vertices (true isometric projection, l_x=90, l_y=165, depth=6) -->
-  <!-- Points: A (top left), B (top right), C (bottom right), D (bottom left) -->
-  <!-- Coordinates calculated for isometric view -->
-  <polygon points="65,40 225,80 295,180 135,140" class="slab-top"/>
-  <!-- Edge 1 (top, simply supported) -->
-  <polygon points="65,40 225,80 225,92 65,52" class="slab-edge-simp"/>
-  <!-- Edge 2 (right, simply supported) -->
-  <polygon points="225,80 295,180 295,192 225,92" class="slab-edge-simp"/>
-  <!-- Edge 3 (bottom, continuous) -->
-  <polygon points="295,180 135,140 135,152 295,192" class="slab-edge-cont"/>
-  <!-- Edge 4 (left, continuous) -->
-  <polygon points="65,40 65,52 135,152 135,140" class="slab-edge-cont"/>
-  <!-- Outline (for clarity) -->
-  <polyline points="65,40 225,80 295,180 135,140 65,40" fill="none" stroke="#333" stroke-width="2.5"/>
-  <polyline points="65,52 225,92 295,192 135,152 65,52" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
-  <line x1="225" y1="80" x2="225" y2="92" stroke="#333" stroke-width="2"/>
-  <line x1="295" y1="180" x2="295" y2="192" stroke="#333" stroke-width="2"/>
-  <line x1="135" y1="140" x2="135" y2="152" stroke="#333" stroke-width="2"/>
-  <line x1="65" y1="40" x2="65" y2="52" stroke="#333" stroke-width="2"/>
-  <!-- Case number -->
-  <text x="180" y="260" class="case">
-    Case 4
-  </text>
+  <!-- Each slab starts at (x0, y0), all size params below use lx~130, ly~240, d~10 (proportional to ly/lx=1.85) -->
+  <!-- For Code: Edges go: 1-top, 2-right, 3-bottom, 4-left [plan view: y+ is down, x+ right] -->
+  <!-- Placement grid: left 100, right 350, 600 for x; 80, 360, 640 for y -->
+  <!-- CASE 1 – SSSS -->
+  <g transform="translate(80,60)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-simp"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-simp"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-simp"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-simp"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 1</text>
+  </g>
+  <!-- CASE 2 – CCSS -->
+  <g transform="translate(410,60)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-cont"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-cont"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-simp"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-simp"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 2</text>
+  </g>
+  <!-- CASE 3 – SSCC -->
+  <g transform="translate(740,60)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-simp"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-cont"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-cont"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-simp"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 3</text>
+  </g>
+  <!-- CASE 4 – SSCC (3-bottom, 4-left) -->
+  <g transform="translate(80,400)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-simp"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-simp"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-cont"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-cont"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 4</text>
+  </g>
+  <!-- CASE 5 – CSSS -->
+  <g transform="translate(410,400)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-cont"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-simp"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-simp"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-simp"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 5</text>
+  </g>
+  <!-- CASE 6 – C CSS -->
+  <g transform="translate(740,400)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-cont"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-cont"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-simp"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-simp"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 6</text>
+  </g>
+  <!-- CASE 7 – SCSS -->
+  <g transform="translate(80,740)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-simp"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-cont"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-simp"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-simp"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 7</text>
+  </g>
+  <!-- CASE 8 – CCCC -->
+  <g transform="translate(410,740)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-cont"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-cont"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-cont"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-cont"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 8</text>
+  </g>
+  <!-- CASE 9 – SCCC (1-top S, 2-4 C) -->
+  <g transform="translate(740,740)">
+    <polygon points="40,20 170,50 230,195 100,165" class="slab-top"/>
+    <polygon points="40,20 170,50 170,60 40,30" class="slab-edge-simp"/>
+    <polygon points="170,50 230,195 230,205 170,60" class="slab-edge-cont"/>
+    <polygon points="230,195 100,165 100,175 230,205" class="slab-edge-cont"/>
+    <polygon points="40,20 40,30 100,175 100,165" class="slab-edge-cont"/>
+    <polyline points="40,20 170,50 230,195 100,165 40,20" fill="none" stroke="#333" stroke-width="2.5"/>
+    <polyline points="40,30 170,60 230,205 100,175 40,30" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+    <line x1="170" y1="50" x2="170" y2="60" stroke="#333" stroke-width="2"/>
+    <line x1="230" y1="195" x2="230" y2="205" stroke="#333" stroke-width="2"/>
+    <line x1="100" y1="165" x2="100" y2="175" stroke="#333" stroke-width="2"/>
+    <line x1="40" y1="20" x2="40" y2="30" stroke="#333" stroke-width="2"/>
+    <text x="135" y="235" class="case">Case 9</text>
+  </g>
+  <!-- LEGEND -->
+  <g>
+    <rect x="190" y="1100" width="50" height="25" fill="#D32F2F" opacity="0.6" />
+    <text x="250" y="1120" class="legend-label">Continuous (Fixed/Red)</text>
+    <rect x="600" y="1100" width="50" height="25" fill="#388E3C" opacity="0.6" />
+    <text x="660" y="1120" class="legend-label">Simply Supported (Green)</text>
+  </g>
 </svg>
