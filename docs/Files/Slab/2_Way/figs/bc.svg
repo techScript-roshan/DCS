@@ -1,0 +1,31 @@
+<svg width="330" height="280" viewBox="0 0 330 280" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .slab-top { fill: #888; opacity: 0.85; }
+    .slab-edge-cont { fill: #D32F2F; opacity: 0.6; }
+    .slab-edge-simp { fill: #388E3C; opacity: 0.6; }
+    .case { font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; fill: #222; text-anchor: middle; }
+  </style>
+  <!-- Slab vertices (true isometric projection, l_x=90, l_y=165, depth=6) -->
+  <!-- Points: A (top left), B (top right), C (bottom right), D (bottom left) -->
+  <!-- Coordinates calculated for isometric view -->
+  <polygon points="65,40 225,80 295,180 135,140" class="slab-top"/>
+  <!-- Edge 1 (top, simply supported) -->
+  <polygon points="65,40 225,80 225,92 65,52" class="slab-edge-simp"/>
+  <!-- Edge 2 (right, simply supported) -->
+  <polygon points="225,80 295,180 295,192 225,92" class="slab-edge-simp"/>
+  <!-- Edge 3 (bottom, continuous) -->
+  <polygon points="295,180 135,140 135,152 295,192" class="slab-edge-cont"/>
+  <!-- Edge 4 (left, continuous) -->
+  <polygon points="65,40 65,52 135,152 135,140" class="slab-edge-cont"/>
+  <!-- Outline (for clarity) -->
+  <polyline points="65,40 225,80 295,180 135,140 65,40" fill="none" stroke="#333" stroke-width="2.5"/>
+  <polyline points="65,52 225,92 295,192 135,152 65,52" fill="none" stroke="#333" stroke-width="2.5" opacity="0.5"/>
+  <line x1="225" y1="80" x2="225" y2="92" stroke="#333" stroke-width="2"/>
+  <line x1="295" y1="180" x2="295" y2="192" stroke="#333" stroke-width="2"/>
+  <line x1="135" y1="140" x2="135" y2="152" stroke="#333" stroke-width="2"/>
+  <line x1="65" y1="40" x2="65" y2="52" stroke="#333" stroke-width="2"/>
+  <!-- Case number -->
+  <text x="180" y="260" class="case">
+    Case 4
+  </text>
+</svg>
