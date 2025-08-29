@@ -6,7 +6,7 @@ This page explains how to solve a quadratic equation of the form $ax^2 + bx + c 
 
 The quadratic formula is used to find the roots of the equation:
 
-$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 We will solve the equation where $a=1$, $b=2$, and $c=-8$.
 
