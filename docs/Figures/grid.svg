@@ -1,4 +1,4 @@
-<svg viewBox="0 0 600 450" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="450" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid meet">
     <!-- Define markers for arrowheads with a smaller size -->
     <defs>
         <marker id="arrowhead" viewBox="0 0 10 5" refX="5" refY="2.5" markerWidth="10" markerHeight="5" orient="auto">
@@ -13,7 +13,8 @@
     <g>
         <!-- Central point E -->
         <circle cx="300" cy="250" r="3" fill="#333" />
-        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="305" y="240">E</text>
+        <text font-size="14px" font-weight="bold" fill="#333" x="305" y="240"
+              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">E</text>
 
         <!-- Beams -->
         <line stroke="#333" stroke-width="3" stroke-linecap="round" x1="186.6" y1="310" x2="413.4" y2="190" /> <!-- Beam AEB -->
@@ -26,14 +27,19 @@
         <path fill="#4caf50" stroke="#388e3c" stroke-width="1.5" d="M 413.4 310 L 403.4 325 L 423.4 325 Z" /> <!-- Support D -->
 
         <!-- Labels for points A, B, C, D -->
-        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="170" y="311">A</text>
-        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="430" y="185">B</text>
-        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="170" y="185">C</text>
-        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="430" y="325">D</text>
+        <text font-size="14px" font-weight="bold" fill="#333" x="170" y="311"
+              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">A</text>
+        <text font-size="14px" font-weight="bold" fill="#333" x="430" y="185"
+              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">B</text>
+        <text font-size="14px" font-weight="bold" fill="#333" x="170" y="185"
+              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">C</text>
+        <text font-size="14px" font-weight="bold" fill="#333" x="430" y="325"
+              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">D</text>
 
         <!-- Concentrated Load P at E -->
         <line fill="none" stroke="#f44336" stroke-width="3" marker-end="url(#loadArrowhead)" x1="300" y1="250" x2="300" y2="310" />
-        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="310" y="315">P</text>
+        <text font-size="14px" font-weight="bold" fill="#333" x="310" y="315"
+              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">P</text>
     </g>
 
     <!-- Axes (isometric) -->
