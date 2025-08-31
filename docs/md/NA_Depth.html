@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neutral Axis Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f7fa;
+        }
+
+        h1 {
+            color: #154D71;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        input {
+            margin: 5px 0 15px 0;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #33A1E0;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1C6EA4;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Neutral Axis Depth Calculator (RC Member)</h2>
+    <p>This page explains how to calculate the <b>depth of the neutral axis</b> for a balanced section in reinforced
+        concrete.</p>
+    <p>The formula used is:</p>
+    <p>$$
+        \frac{x_{u,max}}{d} = \frac{0.36 \, f_{ck}} {  0.87 \, f_y \, \left(\frac{A_{st}}{b \, d}\right)}
+        $$</p>
+    <p>Here:</p>
+    <ul>
+        <li><b>fck</b> = Characteristic compressive strength of concrete</li>
+        <li><b>fy</b> = Yield strength of steel</li>
+        <li><b>Ast</b> = Area of tensile reinforcement</li>
+        <li><b>b</b> = Width of section</li>
+        <li><b>d</b> = Effective depth</li>
+    </ul>
+    <p>Enter the values below and click "Calculate".</p>
+
+
+    <label for="fy">f<sub>y</sub> (N/mm²):</label>
+    <input type="number" id="fy" value="415"><br>
+
+    <label for="Ast">A<sub>st</sub> (mm²):</label>
+    <input type="number" id="Ast" value="200"><br>
+
+    <label for="fck">f<sub>ck</sub> (N/mm²):</label>
+    <input type="number" id="fck" value="25"><br>
+
+    <label for="b">Width b (mm):</label>
+    <input type="number" id="b" value="230"><br>
+
+    <button onclick="calculateNeutralAxis()">Calculate</button>
+
+    <p id="neutralAxisResult"></p>
+
+    <script src="/docs/js/NA_Depth.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+</body>
+
+</html>
