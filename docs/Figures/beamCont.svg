@@ -22,7 +22,7 @@
   <!-- Fixed Support -->
   <rect x="94" y="116" width="24" height="255" class="fixed-support"/>
   <!-- Label A moved to mid height of supports y=370 -->
-  <text x="100" y="370" class="support-label" text-anchor="middle">A</text>
+  <text x="160" y="370" class="support-label" text-anchor="middle">A</text>
   <g transform="translate(94,116)">
     <line x1="0" y1="0" x2="-35" y2="35" stroke="black" stroke-width="4"/>
     <line x1="0" y1="28.33" x2="-35" y2="63.33" stroke="black" stroke-width="4"/>
