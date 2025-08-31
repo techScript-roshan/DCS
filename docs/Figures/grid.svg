@@ -13,41 +13,41 @@
     <g>
         <!-- Central point E -->
         <circle cx="300" cy="250" r="3" fill="#333" />
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="305" y="240">E</text>
+        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="305" y="240">E</text>
 
         <!-- Beams -->
-        <line style="stroke: #333; stroke-width: 3; stroke-linecap: round;" x1="186.6" y1="310" x2="413.4" y2="190" /> <!-- Beam AEB -->
-        <line style="stroke: #333; stroke-width: 3; stroke-linecap: round;" x1="186.6" y1="190" x2="413.4" y2="310" /> <!-- Beam CED -->
+        <line stroke="#333" stroke-width="3" stroke-linecap="round" x1="186.6" y1="310" x2="413.4" y2="190" /> <!-- Beam AEB -->
+        <line stroke="#333" stroke-width="3" stroke-linecap="round" x1="186.6" y1="190" x2="413.4" y2="310" /> <!-- Beam CED -->
 
         <!-- Supports -->
-        <path style="fill: #4caf50; stroke: #388e3c; stroke-width: 1.5;" d="M 186.6 310 L 176.6 325 L 196.6 325 Z" /> <!-- Support A -->
-        <path style="fill: #4caf50; stroke: #388e3c; stroke-width: 1.5;" d="M 413.4 190 L 403.4 205 L 423.4 205 Z" /> <!-- Support B -->
-        <path style="fill: #4caf50; stroke: #388e3c; stroke-width: 1.5;" d="M 186.6 190 L 176.6 205 L 196.6 205 Z" /> <!-- Support C -->
-        <path style="fill: #4caf50; stroke: #388e3c; stroke-width: 1.5;" d="M 413.4 310 L 403.4 325 L 423.4 325 Z" /> <!-- Support D -->
+        <path fill="#4caf50" stroke="#388e3c" stroke-width="1.5" d="M 186.6 310 L 176.6 325 L 196.6 325 Z" /> <!-- Support A -->
+        <path fill="#4caf50" stroke="#388e3c" stroke-width="1.5" d="M 413.4 190 L 403.4 205 L 423.4 205 Z" /> <!-- Support B -->
+        <path fill="#4caf50" stroke="#388e3c" stroke-width="1.5" d="M 186.6 190 L 176.6 205 L 196.6 205 Z" /> <!-- Support C -->
+        <path fill="#4caf50" stroke="#388e3c" stroke-width="1.5" d="M 413.4 310 L 403.4 325 L 423.4 325 Z" /> <!-- Support D -->
 
         <!-- Labels for points A, B, C, D -->
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="170" y="311">C</text>
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="430" y="185">D</text>
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="170" y="185">A</text>
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="430" y="325">B</text>
+        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="170" y="311">A</text>
+        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="430" y="185">B</text>
+        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="170" y="185">C</text>
+        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="430" y="325">D</text>
 
         <!-- Concentrated Load P at E -->
-        <line style="fill: none; stroke: #f44336; stroke-width: 3; animation: pulse 1s infinite alternate; marker-end: url(#loadArrowhead);" x1="300" y1="250" x2="300" y2="310" />
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="310" y="315">P</text>
+        <line fill="none" stroke="#f44336" stroke-width="3" marker-end="url(#loadArrowhead)" x1="300" y1="250" x2="300" y2="310" />
+        <text font-size="14px" font-weight="bold" fill="#333" text-shadow="1px 1px 2px rgba(255, 255, 255, 0.8)" x="310" y="315">P</text>
     </g>
 
     <!-- Axes (isometric) -->
     <g transform="translate(50, 400)">
         <!-- Y-axis -->
-        <line style="stroke: #555; stroke-width: 1.5; marker-end: url(#arrowhead);" x1="0" y1="0" x2="60" y2="-30" />
-        <text style="font-size: 16px; font-weight: bold; fill: #555;" x="65" y="-35">Y</text>
+        <line stroke="#555" stroke-width="1.5" marker-end="url(#arrowhead)" x1="0" y1="0" x2="60" y2="-30" />
+        <text font-size="16px" font-weight="bold" fill="#555" x="65" y="-35">Y</text>
         
         <!-- X-axis -->
-        <line style="stroke: #555; stroke-width: 1.5; marker-end: url(#arrowhead);" x1="0" y1="0" x2="60" y2="30" />
-        <text style="font-size: 16px; font-weight: bold; fill: #555;" x="65" y="35">X</text>
+        <line stroke="#555" stroke-width="1.5" marker-end="url(#arrowhead)" x1="0" y1="0" x2="60" y2="30" />
+        <text font-size="16px" font-weight="bold" fill="#555" x="65" y="35">X</text>
 
         <!-- Z-axis -->
-        <line style="stroke: #555; stroke-width: 1.5; marker-end: url(#arrowhead);" x1="0" y1="0" x2="0" y2="-60" />
-        <text style="font-size: 16px; font-weight: bold; fill: #555;" x="-15" y="-65">Z</text>
+        <line stroke="#555" stroke-width="1.5" marker-end="url(#arrowhead)" x1="0" y1="0" x2="0" y2="-60" />
+        <text font-size="16px" font-weight="bold" fill="#555" x="-15" y="-65">Z</text>
     </g>
 </svg>
