@@ -28,13 +28,13 @@
 
         <!-- Labels for points A, B, C, D -->
         <text font-size="14px" font-weight="bold" fill="#333" x="170" y="311"
-              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">A</text>
-        <text font-size="14px" font-weight="bold" fill="#333" x="430" y="185"
-              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">B</text>
-        <text font-size="14px" font-weight="bold" fill="#333" x="170" y="185"
               style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">C</text>
-        <text font-size="14px" font-weight="bold" fill="#333" x="430" y="325"
+        <text font-size="14px" font-weight="bold" fill="#333" x="430" y="185"
               style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">D</text>
+        <text font-size="14px" font-weight="bold" fill="#333" x="170" y="185"
+              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">A</text>
+        <text font-size="14px" font-weight="bold" fill="#333" x="430" y="325"
+              style="text-shadow:1px 1px 2px rgba(255, 255, 255, 0.8);">B</text>
 
         <!-- Concentrated Load P at E -->
         <line fill="none" stroke="#f44336" stroke-width="3" marker-end="url(#loadArrowhead)" x1="300" y1="250" x2="300" y2="310" />
