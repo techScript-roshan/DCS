@@ -1,0 +1,61 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Beam outline -->
+  <rect x="100" y="150" width="550" height="55" fill="#cccccc" stroke="#222" stroke-width="2"/>
+  <rect x="650" y="150" width="600" height="55" fill="#cccccc" stroke="#222" stroke-width="2"/>
+  <rect x="1250" y="150" width="550" height="55" fill="#cccccc" stroke="#222" stroke-width="2"/>
+
+  <!-- Fixed end (A), wall symbol -->
+  <rect x="80" y="135" width="20" height="85" fill="#999999" stroke="#000" stroke-width="1"/>
+  <line x1="80" y1="135" x2="100" y2="150" stroke="#000" stroke-width="2"/>
+  <line x1="80" y1="220" x2="100" y2="205" stroke="#000" stroke-width="2"/>
+  <text x="70" y="170" font-size="18" font-family="Arial">Fixed</text>
+  <text x="90" y="145" font-size="18" font-family="Arial">A</text>
+
+  <!-- Columns -->
+  <!-- Column at B -->
+  <rect x="650" y="125" width="30" height="100" fill="#ffebbb" stroke="#b58300" stroke-width="2"/>
+  <text x="660" y="120" font-size="16" font-family="Arial" text-anchor="middle">B</text>
+  <text x="665" y="240" font-size="14" font-family="Arial" transform="rotate(-90 665,240)">550 mm</text>
+  <text x="660" y="245" font-size="14" font-family="Arial" text-anchor="middle">(depth)</text>
+
+  <!-- Column at C -->
+  <rect x="1250" y="125" width="30" height="100" fill="#ffebbb" stroke="#b58300" stroke-width="2"/>
+  <text x="1265" y="120" font-size="16" font-family="Arial" text-anchor="middle">C</text>
+  <text x="1270" y="230" font-size="14" font-family="Arial" transform="rotate(-90 1270,230)">450 mm</text>
+  <text x="1265" y="245" font-size="14" font-family="Arial" text-anchor="middle">(depth)</text>
+
+  <!-- Column at D -->
+  <rect x="1800" y="125" width="30" height="100" fill="#ffebbb" stroke="#b58300" stroke-width="2"/>
+  <text x="1815" y="120" font-size="16" font-family="Arial" text-anchor="middle">D</text>
+  <text x="1820" y="210" font-size="14" font-family="Arial" transform="rotate(-90 1820,210)">300 mm</text>
+  <text x="1815" y="245" font-size="14" font-family="Arial" text-anchor="middle">(depth)</text>
+
+  <!-- Beam section width/depth label -->
+  <text x="800" y="135" font-size="16" font-family="Arial" fill="#005">Beam: 300 mm x 550 mm</text>
+  <line x1="120" y1="205" x2="120" y2="150" stroke="#555" stroke-dasharray="4,2"/>
+  <line x1="120" y1="150" x2="120+300" y2="150" stroke="#555" stroke-width="2"/>
+  <text x="170" y="140" font-size="14" font-family="Arial">300 mm</text>
+  <line x1="100" y1="150" x2="100" y2="205" stroke="#555" stroke-width="2"/>
+  <text x="80" y="190" font-size="14" font-family="Arial">550 mm</text>
+
+  <!-- Span dimension lines -->
+  <!-- AB (5500 mm) -->
+  <line x1="145" y1="240" x2="650" y2="240" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="400" y="260" font-size="16" font-family="Arial" text-anchor="middle">5500 mm</text>
+
+  <!-- BC (6000 mm) -->
+  <line x1="680" y1="240" x2="1250" y2="240" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="965" y="260" font-size="16" font-family="Arial" text-anchor="middle">6000 mm</text>
+
+  <!-- CD (5500 mm) -->
+  <line x1="1280" y1="240" x2="1800" y2="240" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)" marker-start="url(#arrowhead)"/>
+  <text x="1540" y="260" font-size="16" font-family="Arial" text-anchor="middle">5500 mm</text>
+
+  <!-- Arrowhead marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="2" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>
