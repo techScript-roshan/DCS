@@ -1,79 +1,75 @@
-<svg width="1500" height="400" viewBox="0 0 3150 400" xmlns="http://www.w3.org/2000/svg">
+<svg width="3150" height="650" viewBox="0 0 3150 650" xmlns="http://www.w3.org/2000/svg">
   <!-- PARAMETERS -->
-  <!--
-    scale = 0.15 px/mm
-    beamWidth = 300mm; beamDepth = 550mm
-    spanAB = 5500mm; spanBC = 6000mm; spanCD = 5500mm
-    colB_depth = 550mm; colC_depth = 450mm; colD_depth = 300mm
-    colWidth = 300mm
-    supportHeight = 300mm (vertical below beam)
-  -->
+  <!-- scale = 0.3 px/mm (2x previous) -->
+  <!-- beamWidth = 300mm; beamDepth = 550mm -->
+  <!-- spanAB = 5500mm; spanBC = 6000mm; spanCD = 5500mm -->
+  <!-- colB_depth = 550mm; colC_depth = 450mm; colD_depth = 300mm -->
+  <!-- colWidth = 300mm -->
+  <!-- supportHeight = 300mm (vertical below beam) -->
+
   <defs>
     <style type="text/css"><![CDATA[
-      .beam { fill: #ffe66a; stroke: #444; stroke-width: 2; }
-      .support { fill: #27d534; stroke: #1a8f23; stroke-width: 2; }
-      .span-dim-line { stroke: #212121; stroke-width: 2; }
-      .dim-ext { stroke: #212121; stroke-width: 2; }
-      .dim-slash { font-size: 27px; font-family: monospace; fill: #212121; }
-      .dim-label { font-size: 22px; font-family: Arial; fill: #222;}
-      .beam-label { font-size: 22px; font-family: Arial; fill: #995800;}
-      .col-label { font-size: 20px; font-family: Arial; fill: #222;}
+      .beam { fill: #ffe66a; stroke: #444; stroke-width: 3; }
+      .support { fill: #27d534; stroke: #1a8f23; stroke-width: 3; }
+      .span-dim-line { stroke: #212121; stroke-width: 3; }
+      .dim-ext { stroke: #212121; stroke-width: 3; }
+      .dim-slash { font-size: 40px; font-family: monospace; fill: #212121; }
+      .dim-label { font-size: 27px; font-family: Arial; fill: #222;}
+      .beam-label { font-size: 27px; font-family: Arial; fill: #995800;}
+      .col-label { font-size: 24px; font-family: Arial; fill: #222;}
     ]]></style>
   </defs>
-  <!-- Grid origin at (100,80), beam top -->
-  <!-- Calculated (px): scale=0.15 -->
-  <!-- beamDepth = 82.5, colWidth = 45, supportHeight = 45 -->
-  <!-- spanAB: 825, BC: 900, CD: 825 -->
-  <!-- colB_depth: 82.5, colC_depth: 67.5, colD_depth: 45 -->
-  <!-- Beam full length: 825+900+825 = 2550 -->
-  <!-- Beam rectangle -->
-  <rect x="100" y="80" width="2550" height="82.5" class="beam"/>
+
+  <!-- Beam full length: 825+900+825 = 2550 mm * 0.3 = 765 px per span length-->
+  <rect x="100" y="160" width="2550" height="165" class="beam"/>
   <!-- Beam label -->
-  <text x="1375" y="68" class="beam-label" text-anchor="middle">Beam: 300 mm × 550 mm</text>
+  <text x="1375" y="140" class="beam-label" text-anchor="middle">Beam: 300 mm × 550 mm</text>
 
-  <!-- Fixed support at A (green, height = 45px, 22.5px above/below beam) -->
-  <rect x="94" y="58" width="12" height="127.5" class="support"/>
-  <!-- 3 green / to left of A -->
-  <text x="80" y="81" font-size="32" font-family="monospace" fill="#27d534">/</text>
-  <text x="80" y="107" font-size="32" font-family="monospace" fill="#27d534">/</text>
-  <text x="80" y="133" font-size="32" font-family="monospace" fill="#27d534">/</text>
+  <!-- Fixed support at A: 45*2=90px height -->
+  <rect x="94" y="116" width="24" height="255" class="support"/>
+  <!-- Full slashes along entire support height -->
+  <text x="70" y="160" font-size="40" font-family="monospace" fill="#27d534">/</text>
+  <text x="70" y="200" font-size="40" font-family="monospace" fill="#27d534">/</text>
+  <text x="70" y="240" font-size="40" font-family="monospace" fill="#27d534">/</text>
+  <text x="70" y="280" font-size="40" font-family="monospace" fill="#27d534">/</text>
+  <text x="70" y="320" font-size="40" font-family="monospace" fill="#27d534">/</text>
 
-  <!-- Column B at end of AB -->
-  <rect x="925" y="162.5" width="82.5" height="45" class="support"/>
-  <!-- Column C at end of BC -->
-  <rect x="1825" y="162.5" width="67.5" height="45" class="support"/>
-  <!-- Column D at end of CD -->
-  <rect x="2550" y="162.5" width="45" height="45" class="support"/>
+  <!-- Column B -->
+  <rect x="925" y="325" width="165" height="90" class="support"/>
+  <text x="1007" y="420" class="col-label" text-anchor="middle">B</text>
+  <text x="1007" y="450" class="col-label" text-anchor="middle">550 mm</text>
 
-  <!-- Support/column labels -->
-  <text x="966" y="214" class="col-label" text-anchor="middle">B</text>
-  <text x="966" y="238" class="col-label" text-anchor="middle">550 mm</text>
-  <text x="1858" y="214" class="col-label" text-anchor="middle">C</text>
-  <text x="1858" y="238" class="col-label" text-anchor="middle">450 mm</text>
-  <text x="2572" y="214" class="col-label" text-anchor="middle">D</text>
-  <text x="2572" y="238" class="col-label" text-anchor="middle">300 mm</text>
+  <!-- Column C -->
+  <rect x="1825" y="325" width="135" height="90" class="support"/>
+  <text x="1892" y="420" class="col-label" text-anchor="middle">C</text>
+  <text x="1892" y="450" class="col-label" text-anchor="middle">450 mm</text>
 
-  <!-- Span AB  -->
-  <line x1="122.5" y1="280" x2="925" y2="280" class="span-dim-line"/>
-  <line x1="122.5" y1="280" x2="122.5" y2="298" class="dim-ext"/>
-  <line x1="925" y1="280" x2="925" y2="298" class="dim-ext"/>
-  <text x="118" y="292" class="dim-slash">/</text>
-  <text x="915" y="292" class="dim-slash">/</text>
-  <text x="523" y="308" class="dim-label" text-anchor="middle">5500 mm</text>
+  <!-- Column D -->
+  <rect x="2550" y="325" width="90" height="90" class="support"/>
+  <text x="2595" y="420" class="col-label" text-anchor="middle">D</text>
+  <text x="2595" y="450" class="col-label" text-anchor="middle">300 mm</text>
+
+  <!-- Span AB -->
+  <line x1="122.5" y1="480" x2="925" y2="480" class="span-dim-line"/>
+  <line x1="122.5" y1="480" x2="122.5" y2="505" class="dim-ext"/>
+  <line x1="925" y1="480" x2="925" y2="505" class="dim-ext"/>
+  <text x="118" y="513" class="dim-slash">/</text>
+  <text x="915" y="513" class="dim-slash">/</text>
+  <text x="523" y="540" class="dim-label" text-anchor="middle">5500 mm</text>
 
   <!-- Span BC -->
-  <line x1="1007.5" y1="280" x2="1825" y2="280" class="span-dim-line"/>
-  <line x1="1007.5" y1="280" x2="1007.5" y2="298" class="dim-ext"/>
-  <line x1="1825" y1="280" x2="1825" y2="298" class="dim-ext"/>
-  <text x="997.5" y="292" class="dim-slash">/</text>
-  <text x="1815" y="292" class="dim-slash">/</text>
-  <text x="1416" y="308" class="dim-label" text-anchor="middle">6000 mm</text>
+  <line x1="1007.5" y1="480" x2="1825" y2="480" class="span-dim-line"/>
+  <line x1="1007.5" y1="480" x2="1007.5" y2="505" class="dim-ext"/>
+  <line x1="1825" y1="480" x2="1825" y2="505" class="dim-ext"/>
+  <text x="997.5" y="513" class="dim-slash">/</text>
+  <text x="1815" y="513" class="dim-slash">/</text>
+  <text x="1416" y="540" class="dim-label" text-anchor="middle">6000 mm</text>
 
   <!-- Span CD -->
-  <line x1="1892.5" y1="280" x2="2550" y2="280" class="span-dim-line"/>
-  <line x1="1892.5" y1="280" x2="1892.5" y2="298" class="dim-ext"/>
-  <line x1="2550" y1="280" x2="2550" y2="298" class="dim-ext"/>
-  <text x="1882.5" y="292" class="dim-slash">/</text>
-  <text x="2540" y="292" class="dim-slash">/</text>
-  <text x="2221" y="308" class="dim-label" text-anchor="middle">5500 mm</text>
+  <line x1="1892.5" y1="480" x2="2550" y2="480" class="span-dim-line"/>
+  <line x1="1892.5" y1="480" x2="1892.5" y2="505" class="dim-ext"/>
+  <line x1="2550" y1="480" x2="2550" y2="505" class="dim-ext"/>
+  <text x="1882.5" y="513" class="dim-slash">/</text>
+  <text x="2540" y="513" class="dim-slash">/</text>
+  <text x="2221" y="540" class="dim-label" text-anchor="middle">5500 mm</text>
 </svg>
