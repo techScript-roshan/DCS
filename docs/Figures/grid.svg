@@ -32,7 +32,7 @@
         <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="430" y="325">D</text>
 
         <!-- Concentrated Load P at E -->
-        <line style="fill: none; stroke: #f44336; stroke-width: 3; animation: pulse 1s infinite alternate;" x1="300" y1="250" x2="300" y2="310" />
+        <line style="fill: none; stroke: #f44336; stroke-width: 3; animation: pulse 1s infinite alternate; marker-end: url(#loadArrowhead);" x1="300" y1="250" x2="300" y2="310" />
         <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="310" y="315">P</text>
     </g>
 
