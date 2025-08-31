@@ -1,75 +1,96 @@
-<svg width="3150" height="650" viewBox="0 0 3150 650" xmlns="http://www.w3.org/2000/svg">
-  <!-- PARAMETERS -->
-  <!-- scale = 0.3 px/mm (2x previous) -->
-  <!-- beamWidth = 300mm; beamDepth = 550mm -->
-  <!-- spanAB = 5500mm; spanBC = 6000mm; spanCD = 5500mm -->
-  <!-- colB_depth = 550mm; colC_depth = 450mm; colD_depth = 300mm -->
-  <!-- colWidth = 300mm -->
-  <!-- supportHeight = 300mm (vertical below beam) -->
-
+<svg width="3150" height="700" viewBox="0 0 3150 700" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <style type="text/css"><![CDATA[
-      .beam { fill: #ffe66a; stroke: #444; stroke-width: 3; }
-      .support { fill: #27d534; stroke: #1a8f23; stroke-width: 3; }
+    <style>
+      .beam { fill: #d3d3d3; stroke: #444; stroke-width: 3; }
+      .support { stroke-width: 3; }
+      .fixed-support { fill: black; stroke: black; }
+      .red-support { fill: #d2222d; stroke: #990000; }
       .span-dim-line { stroke: #212121; stroke-width: 3; }
       .dim-ext { stroke: #212121; stroke-width: 3; }
-      .dim-slash { font-size: 40px; font-family: monospace; fill: #212121; }
-      .dim-label { font-size: 27px; font-family: Arial; fill: #222;}
-      .beam-label { font-size: 27px; font-family: Arial; fill: #995800;}
-      .col-label { font-size: 24px; font-family: Arial; fill: #222;}
-    ]]></style>
+      .dim-label { font-size: 81px; font-family: Arial; fill: #222; }
+      .beam-label { font-size: 81px; font-family: Arial; fill: #555; }
+      .col-label { font-size: 81px; font-family: Arial; fill: #222; }
+      .support-label { font-size: 81px; font-family: Arial; fill: #222; dominant-baseline: middle; }
+      .dim-dot { fill: #212121; }
+    </style>
   </defs>
 
-  <!-- Beam full length: 825+900+825 = 2550 mm * 0.3 = 765 px per span length-->
-  <rect x="100" y="160" width="2550" height="165" class="beam"/>
-  <!-- Beam label -->
-  <text x="1375" y="140" class="beam-label" text-anchor="middle">Beam: 300 mm × 550 mm</text>
+  <!-- Beam -->
+  <rect x="100" y="160" width="2540" height="165" class="beam"/>
+  <text x="1320" y="140" class="beam-label" text-anchor="middle">Beam: 300 × 550</text>
 
-  <!-- Fixed support at A: 45*2=90px height -->
-  <rect x="94" y="116" width="24" height="255" class="support"/>
-  <!-- Full slashes along entire support height -->
-  <text x="70" y="160" font-size="40" font-family="monospace" fill="#27d534">/</text>
-  <text x="70" y="200" font-size="40" font-family="monospace" fill="#27d534">/</text>
-  <text x="70" y="240" font-size="40" font-family="monospace" fill="#27d534">/</text>
-  <text x="70" y="280" font-size="40" font-family="monospace" fill="#27d534">/</text>
-  <text x="70" y="320" font-size="40" font-family="monospace" fill="#27d534">/</text>
+  <!-- Fixed Support -->
+  <rect x="94" y="116" width="24" height="255" class="fixed-support"/>
+  <!-- Label A moved to mid height of supports y=370 -->
+  <text x="100" y="370" class="support-label" text-anchor="middle">A</text>
+  <g transform="translate(94,116)">
+    <line x1="0" y1="0" x2="-35" y2="35" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="28.33" x2="-35" y2="63.33" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="56.66" x2="-35" y2="91.66" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="85" x2="-35" y2="120" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="113.33" x2="-35" y2="148.33" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="141.66" x2="-35" y2="176.66" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="170" x2="-35" y2="205" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="198.33" x2="-35" y2="233.33" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="226.66" x2="-35" y2="261.66" stroke="black" stroke-width="4"/>
+    <line x1="0" y1="255" x2="-35" y2="290" stroke="black" stroke-width="4"/>
+  </g>
 
-  <!-- Column B -->
-  <rect x="925" y="325" width="165" height="90" class="support"/>
-  <text x="1007" y="420" class="col-label" text-anchor="middle">B</text>
-  <text x="1007" y="450" class="col-label" text-anchor="middle">550 mm</text>
+  <!-- Columns B, C, D red supports with labels at mid height y=370 -->
+  <rect x="925" y="325" width="165" height="90" class="red-support"/>
+  <text x="1007.5" y="370" class="col-label" text-anchor="middle" dominant-baseline="middle">B</text>
+  <text x="1007.5" y="570" class="dim-label" text-anchor="middle">550</text>
 
-  <!-- Column C -->
-  <rect x="1825" y="325" width="135" height="90" class="support"/>
-  <text x="1892" y="420" class="col-label" text-anchor="middle">C</text>
-  <text x="1892" y="450" class="col-label" text-anchor="middle">450 mm</text>
+  <rect x="1825" y="325" width="135" height="90" class="red-support"/>
+  <text x="1892.5" y="370" class="col-label" text-anchor="middle" dominant-baseline="middle">C</text>
+  <text x="1892.5" y="570" class="dim-label" text-anchor="middle">450</text>
 
-  <!-- Column D -->
-  <rect x="2550" y="325" width="90" height="90" class="support"/>
-  <text x="2595" y="420" class="col-label" text-anchor="middle">D</text>
-  <text x="2595" y="450" class="col-label" text-anchor="middle">300 mm</text>
+  <rect x="2550" y="325" width="90" height="90" class="red-support"/>
+  <text x="2595" y="370" class="col-label" text-anchor="middle" dominant-baseline="middle">D</text>
+  <text x="2595" y="570" class="dim-label" text-anchor="middle">300</text>
 
-  <!-- Span AB -->
+  <!-- Clear span dimension lines -->
   <line x1="122.5" y1="480" x2="925" y2="480" class="span-dim-line"/>
-  <line x1="122.5" y1="480" x2="122.5" y2="505" class="dim-ext"/>
-  <line x1="925" y1="480" x2="925" y2="505" class="dim-ext"/>
-  <text x="118" y="513" class="dim-slash">/</text>
-  <text x="915" y="513" class="dim-slash">/</text>
-  <text x="523" y="540" class="dim-label" text-anchor="middle">5500 mm</text>
+  <line x1="1090" y1="480" x2="1960" y2="480" class="span-dim-line"/>
+  <line x1="1960" y1="480" x2="2640" y2="480" class="span-dim-line"/>
 
-  <!-- Span BC -->
-  <line x1="1007.5" y1="480" x2="1825" y2="480" class="span-dim-line"/>
-  <line x1="1007.5" y1="480" x2="1007.5" y2="505" class="dim-ext"/>
-  <line x1="1825" y1="480" x2="1825" y2="505" class="dim-ext"/>
-  <text x="997.5" y="513" class="dim-slash">/</text>
-  <text x="1815" y="513" class="dim-slash">/</text>
-  <text x="1416" y="540" class="dim-label" text-anchor="middle">6000 mm</text>
+  <!-- Extension lines -->
+  <line x1="122.5" y1="450" x2="122.5" y2="510" class="dim-ext"/>
+  <line x1="925" y1="450" x2="925" y2="510" class="dim-ext"/>
+  <line x1="1090" y1="450" x2="1090" y2="510" class="dim-ext"/>
+  <line x1="1960" y1="450" x2="1960" y2="510" class="dim-ext"/>
+  <line x1="1960" y1="450" x2="1960" y2="510" class="dim-ext"/>
+  <line x1="2640" y1="450" x2="2640" y2="510" class="dim-ext"/>
 
-  <!-- Span CD -->
-  <line x1="1892.5" y1="480" x2="2550" y2="480" class="span-dim-line"/>
-  <line x1="1892.5" y1="480" x2="1892.5" y2="505" class="dim-ext"/>
-  <line x1="2550" y1="480" x2="2550" y2="505" class="dim-ext"/>
-  <text x="1882.5" y="513" class="dim-slash">/</text>
-  <text x="2540" y="513" class="dim-slash">/</text>
-  <text x="2221" y="540" class="dim-label" text-anchor="middle">5500 mm</text>
+  <!-- Dots -->
+  <circle cx="122.5" cy="480" r="12" class="dim-dot"/>
+  <circle cx="925" cy="480" r="12" class="dim-dot"/>
+  <circle cx="1090" cy="480" r="12" class="dim-dot"/>
+  <circle cx="1960" cy="480" r="12" class="dim-dot"/>
+  <circle cx="1960" cy="480" r="12" class="dim-dot"/>
+  <circle cx="2640" cy="480" r="12" class="dim-dot"/>
+
+  <!-- Clear span dimension texts -->
+  <text x="523" y="570" class="dim-label" text-anchor="middle">5500</text>
+  <text x="1525" y="570" class="dim-label" text-anchor="middle">6000</text>
+  <text x="2255" y="570" class="dim-label" text-anchor="middle">5500</text>
+
+  <!-- Support width dimension lines -->
+  <line x1="925" y1="480" x2="1090" y2="480" class="span-dim-line"/>
+  <line x1="925" y1="450" x2="925" y2="510" class="dim-ext"/>
+  <line x1="1090" y1="450" x2="1090" y2="510" class="dim-ext"/>
+  <circle cx="925" cy="480" r="12" class="dim-dot"/>
+  <circle cx="1090" cy="480" r="12" class="dim-dot"/>
+
+  <line x1="1825" y1="450" x2="1825" y2="510" class="dim-ext"/>
+  <circle cx="1825" cy="480" r="12" class="dim-dot"/>
+
+  <line x1="2550" y1="480" x2="2640" y2="480" class="span-dim-line"/>
+  <line x1="2550" y1="450" x2="2550" y2="510" class="dim-ext"/>
+  <line x1="2640" y1="450" x2="2640" y2="510" class="dim-ext"/>
+  <circle cx="2550" cy="480" r="12" class="dim-dot"/>
+  <circle cx="2640" cy="480" r="12" class="dim-dot"/>
+
+  <line x1="2640" y1="450" x2="2640" y2="510" class="dim-ext"/>
+  <circle cx="2640" cy="480" r="12" class="dim-dot"/>
 </svg>
