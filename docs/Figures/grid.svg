@@ -26,10 +26,10 @@
         <path style="fill: #4caf50; stroke: #388e3c; stroke-width: 1.5;" d="M 413.4 310 L 403.4 325 L 423.4 325 Z" /> <!-- Support D -->
 
         <!-- Labels for points A, B, C, D -->
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="170" y="311">A</text>
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="430" y="185">B</text>
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="170" y="185">C</text>
-        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="430" y="325">D</text>
+        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="170" y="311">C</text>
+        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="430" y="185">D</text>
+        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="170" y="185">A</text>
+        <text style="font-size: 14px; font-weight: bold; fill: #333; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);" x="430" y="325">B</text>
 
         <!-- Concentrated Load P at E -->
         <line style="fill: none; stroke: #f44336; stroke-width: 3; animation: pulse 1s infinite alternate; marker-end: url(#loadArrowhead);" x1="300" y1="250" x2="300" y2="310" />
